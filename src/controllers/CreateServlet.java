@@ -53,7 +53,6 @@ public class CreateServlet extends HttpServlet {
             // データベースに保存
             request.getSession().setAttribute("flush", "登録が完了しました。");
             em.close();
-            em.close();
 
             response.sendRedirect(request.getContextPath() + "/index");
         }
